@@ -12,11 +12,20 @@ class ProductoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $productos =Producto::all();
-        return view('Producto.index')-> with('productos', $productos);
+        if ($request) {
+            $query = trim($request->get(  'buscar'));
+
+            $productosNom = Producto::where ('nombre', 'LIKE', '%' . $query . '%')
+                ->orWhere ('codigo', 'LIKE', '%' . $query . '%')
+                ->orWhere ('sucursal', 'LIKE', '%' . $query . '%')
+                ->orderBy('codigo', 'asc')
+                ->get();
+
+            return view('Producto.index') -> with('productos', $productosNom, 'buscar', $query);
     }
+}
 
     /**
      * Show the form for creating a new resource.
@@ -25,7 +34,7 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        return view('Producto.create');
+        return view('Producto/create');
     }
 
     /**
