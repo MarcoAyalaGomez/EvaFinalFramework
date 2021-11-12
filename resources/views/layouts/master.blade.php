@@ -23,7 +23,7 @@
                     <a class="nav-link" href="#">Buscar productos</a>
                 </li>
                 <li class="nav-item">
-                    <form action="login" method="POST">
+                    <form action="/login" method="POST">
                     @csrf
                     @method('put')
                    <button class="nav-link" type="submit">Cerrar Sesión</button>
