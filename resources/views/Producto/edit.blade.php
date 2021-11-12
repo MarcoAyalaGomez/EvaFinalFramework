@@ -19,7 +19,12 @@
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Sucursal</label>
-    <input type="text" name="sucursal" id="sucursal" class="form-control" value="{{$producto-> codigo}}">
+    <select class="form-control" name="sucursal" id="sucursal" required>
+        <option value="">Selecciona una sucursal</option>
+        <option value="Maipú">Maipú </option>
+        <option value="Puente Alto">Puente Alto </option>
+        <option value="Cerrillos">Cerrillos </option>
+    </select>
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Descripción</label>
