@@ -8,15 +8,15 @@
     @csrf
 <div class="mb-3">
     <label for="" class="form-label"> Código</label>
-    <input type="text" name="codigo" id="codigo" class="form-control" required>
+    <input type="text" name="codigo" id="codigo" class="form-control" required maxlength="10">
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Nombre</label>
-    <input type="text" name="nombre" id="nombre"class="form-control" required>
+    <input type="text" name="nombre" id="nombre"class="form-control" required maxlength="10">
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Categoría</label>
-    <input type="text" name="categoria" id="categoria"class="form-control" required>
+    <input type="text" name="categoria" id="categoria"class="form-control" required maxlength="10">
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Sucursal</label>
@@ -29,16 +29,16 @@
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Descripción</label>
-    <input type="text" name="descripcion" id="descripcion" class="form-control" required>
+    <input type="text" name="descripcion" id="descripcion" class="form-control" required maxlength="20">
     
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Cantidad</label>
-    <input type="number" name="cantidad" id="cantidad" class="form-control"required>
+    <input type="number" name="cantidad" id="cantidad" class="form-control"required maxlength="10">
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Precio</label>
-    <input type="number" name="precio" id="precio"class="form-control" required>
+    <input type="number" name="precio" id="precio"class="form-control" required maxlength="20"> 
 </div>
 
 <a href="/productos" class="btn btn-secundary">Cancelar</a>
