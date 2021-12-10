@@ -12,11 +12,11 @@
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Nombre</label>
-    <input type="text" name="nombre" id="nombre"class="form-control" required maxlength="10">
+    <input type="text" name="nombre" id="nombre"class="form-control" required maxlength="50">
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Categoría</label>
-    <input type="text" name="categoria" id="categoria"class="form-control" required maxlength="10">
+    <input type="text" name="categoria" id="categoria"class="form-control" required maxlength="50">
 </div>
 <div class="mb-3">
     <label for="" class="form-label"> Sucursal</label>
