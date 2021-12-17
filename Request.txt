@@ -1,0 +1,20 @@
+Ejemplo de Request para Registro de Usuario : 
+Metodo 	POST 
+URL:		http://localhost:8000/api/registro
+Params:	KEY: json	VALUE: {"email":"prueba@prueba.com","name":"prueba","password":"prueba"}
+
+Ejemplo de Request para Login de Usuario : 
+Metodo 	POST 
+URL:		http://localhost:8000/api/login
+Params:	KEY: json	VALUE: {"email":"prueba@prueba.com","password":"prueba"}
+
+Ejemplo de Request para Creación de Productos vinculado a un usuario  
+Metodo 	POST 
+URL:		http://localhost:8000/productos
+Params:	KEY: json	VALUE: {"codigo":"55","descripcion":"PruebaFinal","precio":"555","categoria":"Prueba Final","nombre":"Prueba 55","sucursal":"Av Siempre Viva"}
+Para vincular al usuario recordar ingresar el token como value de este en Headers
+ 
+Ejemplo de Request para Elminar Productos vinculado a un usuario  
+Metodo 	DELETE
+URL:		http://localhost:8000/productos/{id del producto a eliminar}
+Para acceder al producto vinculado al usuario recordar ingresar el token como value de este en Headers
